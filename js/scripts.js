@@ -5,7 +5,9 @@ $(document).ready(function() {
     // var userInput = $("input#input").val();
     // var translatedString = translateSentenceToPigLatin(userInput);
     $('.result').show();
+    var userInput = parseInt($("#input").val());
     $('#original').text(userInput);
+    var translatedString = convertToRoman(userInput);
     $('#romanNumeralTranslation').text(translatedString);
   });
   // console.log(isVowel(""));
@@ -16,37 +18,39 @@ $(document).ready(function() {
 
 // put them in object as key value pairs vvv
 function convertToRoman(num) {
- var romanToNum = {
-   M: 1000,
-   CM: 900,
-   D: 500,
-   CD: 400,
-   C: 100,
-   XC: 90,
-   L: 50,
-   XL: 40,
-   X: 10,
-   IX: 9,
-   V: 5,
-   IV: 4,
-   I: 1
- };
+ var romanToNum = [
+   'M',
+   'CM',
+   'D',
+   'CD',
+   'C',
+   'XC',
+   'L',
+   'XL',
+   'X',
+   'IX',
+   'V',
+   'IV',
+   'I'
+ ];
+ var nums = [1000,900,500,400,100,90,50,40,10,9,5,4,1]
 
   var roman = "";
 
-  for (var key in romanToNum) {
+  for (var i = 0; i < romanToNum.length; i++) {
+    var key = romanToNum[i];
     // console.log("key: ", key)
     // console.log("value: ", romanToNum[key]);
-    while (num >= romanToNum[key]) {
+    while (num >= nums[i]) {
       roman += key;
-      num -= romanToNum[key];
+      num -= nums[i];
       console.log("Num is decreased: ", num)
     }
   }
  return roman;
 }
 
-convertToRoman(8);
+// convertToRoman(8);
 
 
 
