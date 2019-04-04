@@ -16,9 +16,39 @@
   margin-left: auto;
   margin-right: auto;
   max-height: 30vw;
+  padding: 30px;
+  /* height: 50%;
+  width: 100%; */
   /* align-content: center; */
 }
 
 h1 {
   font-family: 'Aladin', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+label {
+  font-family: 'Eagle Lake', cursive;
+  font-size: 25px;
+}
+
+h4 {
+  font-family: 'Felipa', cursive;
+  font-size: 30px;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+p {
+  font-family: 'Felipa', cursive;
+  font-size: 60px;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+body  {
+  background-image: url("https://dumielauxepices.net/sites/default/files/poster-clipart-old-paper-725982-859946.jpg");
+  background-color: #cccccc;
+  background-size: cover;
 }

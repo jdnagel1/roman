@@ -18,26 +18,12 @@ $(document).ready(function() {
 
 // put them in object as key value pairs vvv
 function convertToRoman(num) {
- var romanToNum = [
-   'M',
-   'CM',
-   'D',
-   'CD',
-   'C',
-   'XC',
-   'L',
-   'XL',
-   'X',
-   'IX',
-   'V',
-   'IV',
-   'I'
- ];
+ var romanToNum = ['M','CM','D','CD','C','XC','L','XL','X','IX','V','IV','I'];
  var nums = [1000,900,500,400,100,90,50,40,10,9,5,4,1]
 
   var roman = "";
 
-  for (var i = 0; i < romanToNum.length; i++) {
+  for (i = 0; i < romanToNum.length; i++) {
     var key = romanToNum[i];
     // console.log("key: ", key)
     // console.log("value: ", romanToNum[key]);
