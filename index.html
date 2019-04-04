@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Aladin" rel="stylesheet">
+  <title>Roman Numeral Converter</title>
+</head>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 id="title">Roman Numeral Converter</h1>
+      <img id="romanpic" src="img/roman.jpg" alt="roman dude">
+    </div>
+    <form>
+      <label for="stringInput">Enter a number here to convert into roman numerals:</label>
+      <input id="input" type="text" name="stringInput">
+      <button class="btn btn-dark" type="submit" name="button">Submit</button>
+    </form>
+    <div class="result">
+      <h4>Your original number:</h4>
+      <p id="original"></p>
+      <h4>Your translated sentence:</h4>
+      <p id="romanNumeralTranslation"></p>
+    </div>
+    <img id="romanpic2" src="img/roman2.jpg" alt="awesome roman reference picture">
+  </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.result {
+  display: none;
+}
+
+.result {
+  float: left;
+}
+
+#romanpic2 {
+  float: right;
+  padding: 30px;
+}
+
+#romanpic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 30vw;
+  /* align-content: center; */
+}
+
+h1 {
+  font-family: 'Aladin', cursive;
+}
